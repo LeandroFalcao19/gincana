@@ -7,6 +7,7 @@ int main(){
     int opt;
     //int Joâo = 0, Pedro = 0, Miguel = 0;
     //int Maria = 0, Julia = 0, Bruna = 0;
+    int qtd;
 
     while (1)
     {
@@ -40,7 +41,30 @@ int main(){
             printf("- O candidato (ou dupla) que acumular a maior quantidade de cartelas vendidas ate o dia da apuracao\n");
             printf("  sera coroado o GRANDE VENCEDOR da nossa festa junina! \n\n");
             break;
+
+            case 2: {
+            printf("\n\n COMPRAR CARTELA \n\n");
+            printf("Quantas cartelas voce deseja comprar? ");
+            scanf("%d", &qtd);
+            }
+
+            if (qtd > 0) {
+                printf("Voce comprou %d cartela(s) com sucesso!\n", qtd);
+            }
+            else {
+                printf("Quantidade invalida. Tente novamente.\n");
+            }
+            break;        
+
+            case 3:
+            printf("\n\n VER GANHADORES \n\n");
+            printf("Os ganhadores da gincana serao anunciados no dia da festa junina!\n");
+            printf("Fique ligado e boa sorte a todos os participantes!\n");
+
+            default:
+            printf("Opcao invalida. Tente novamente.\n");
+            break;
         }
     }
-    return 0;
+    return 0; 
 }

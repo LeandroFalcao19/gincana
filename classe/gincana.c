@@ -53,12 +53,10 @@ int main(){
             printf("[4] Maria\n");
             printf("[5] Julia\n");
             printf("[6] Bruna\n");
-            printf('Escolha uma opcao:');
-            scanf('%d', &candidato);    
+            printf("Escolha uma opcao: ");
 
             printf("Quantas cartelas voce deseja comprar? ");
             scanf("%d", &qtd);
-            }
 
             if (qtd > 0) {
                 printf("Voce comprou %d cartela(s) com sucesso!\n", qtd);

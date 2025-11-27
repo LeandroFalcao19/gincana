@@ -53,7 +53,7 @@ int main(){
             printf("[4] Maria\n");
             printf("[5] Julia\n");
             printf("[6] Bruna\n");
-            printf("Escolha uma opcao: ");
+            scanf("%d", &candidato);
 
             printf("Quantas cartelas voce deseja comprar? ");
             scanf("%d", &qtd);
@@ -73,5 +73,6 @@ int main(){
             break;
         }
     }
+}
     return 0; 
 }

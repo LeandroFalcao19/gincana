@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <locale.h>
 
 
@@ -53,26 +54,21 @@ int main(){
             printf("[4] Maria\n");
             printf("[5] Julia\n");
             printf("[6] Bruna\n");
+            printf("Escolha um candidato: ");
             scanf("%d", &candidato);
 
             printf("Quantas cartelas voce deseja comprar? ");
             scanf("%d", &qtd);
 
-            if (qtd > 0) {
+            if(qtd > 0) {
                 printf("Voce comprou %d cartela(s) com sucesso!\n", qtd);
             }
             else {
                 printf("Quantidade invalida. Tente novamente.\n");
             }
-            break;        
-
-            case 3:
-            printf("\n\n VER GANHADORES \n\n");
-            printf("Os ganhadores da gincana serao anunciados no dia da festa junina!\n");
-            printf("Fique ligado e boa sorte a todos os participantes!\n");
             break;
         }
     }
 }
-    return 0; 
+return 0; 
 }

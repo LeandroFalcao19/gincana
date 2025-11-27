@@ -60,9 +60,6 @@ int main(){
             printf("\n\n VER GANHADORES \n\n");
             printf("Os ganhadores da gincana serao anunciados no dia da festa junina!\n");
             printf("Fique ligado e boa sorte a todos os participantes!\n");
-
-            default:
-            printf("Opcao invalida. Tente novamente.\n");
             break;
         }
     }

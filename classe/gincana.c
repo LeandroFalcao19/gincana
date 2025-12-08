@@ -110,7 +110,7 @@ int main(){
             printf("\n--XERIFE (meninos)--\n");
             printf("Joao: %d votos\n", Joao);
             printf("Pedro: %d votos\n", Pedro);
-            printf("Miguel: %d votos\n", Leandro);
+            printf("Leandro: %d votos\n", Leandro);
 
             printf("\n--SINHAZINHA (meninas)--\n");
             printf("Maria: %d votos\n", Maria);

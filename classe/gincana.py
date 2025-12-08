@@ -1,3 +1,4 @@
+// Criação da classe candidato
 class Candidato:
     def __init__(self, nome):
         self.nome = nome
@@ -17,6 +18,7 @@ class Categoria:
         for i, cand in enumerate(self.candidatos, start=1):
             print(f"[{i}] {cand.nome} ({cand.votos} votos)")
 
+// sistema de quantidade de votos
     def votar(self):
         self.mostrar_candidatos()
         op = int(input("Digite o número do candidato escolhido: "))
@@ -29,11 +31,12 @@ class Categoria:
         self.candidatos[op - 1].adicionar_votos(qtd)
         print("Voto registrado!\n")
 
+// Aqui ele compara os votos dos candidatos e retorna o maior
     def vencedor(self):
         maior = max(self.candidatos, key=lambda c: c.votos)
         return maior
 
-
+// Separação entre candidatos meninos e meninas
 class Gincana:
     def __init__(self):
         self.xerife = Categoria("XERIFE (meninos)", [
@@ -104,6 +107,6 @@ class Gincana:
             else:
                 print("Opção inválida!\n")
 
-
+// Inicia o sistema
 g = Gincana()
 g.menu()
